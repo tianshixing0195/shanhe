@@ -1,0 +1,201 @@
+
+@charset "utf-8";
+
+#banner{
+  max-width: 1920px;
+  min-width: 480px;
+  padding-top: 70px;
+  margin: 0 auto;
+  position: relative;
+  img{
+    width: 100%;
+    cursor: pointer;
+  }
+  .searchBox{
+    height: 60px;
+    width: 40%;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20%;
+    margin-top: -30px;
+
+    border-radius: 10px;
+    input{
+      width: 67%;
+      height: 52px;
+      border-radius: 10px;
+      border: 0;
+      margin-top: 4px;
+      margin-left: 1%;
+      padding-left: 3%;
+      font-size: 16px;
+      display: inline-block;
+    }
+    button{
+      width: 30%;
+      height: 52px;
+      text-align: center;
+      border-radius: 10px;
+      border: none;
+      margin-top: -4px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+
+    }
+  }
+
+}
+
+#tour{
+  max-width: 1250px;
+  margin:30px auto;
+  text-align: center;
+  position: relative;
+
+  .center>h2{
+    margin: 10px 0;
+    font-size: 44px;
+    letter-spacing: 4px;
+    color: #666;
+  }
+  .center>p{
+      color: #666;
+      font-size: 16px;
+      margin: 10px;
+  }
+  .showBox{
+    width: 100%;
+    dl{
+      width: 32%;
+      margin: 15px 0.5%;
+      border: 1px solid #c6c6c6;
+      float: left;
+
+      dt{
+        width: 98%;
+        margin: 1%;
+        position: relative;
+
+        img{
+          width: 100%;
+          cursor: pointer;
+
+        }
+        >span{
+          width: 90px;
+          height: 25px;
+          text-align: center;
+          line-height: 25px;
+          display: block;
+          background-color: #59b200;
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #fff;
+        }
+      }
+      dd{
+        height: 80px;
+        width: 98%;
+        margin: 1%;
+       >p{
+         width: 100%;
+         height: 40px;
+         overflow: hidden;
+         font-size: 16px;
+         line-height: 20px;
+         text-align: left;
+       }
+        >div{
+          width: 100%;
+          height: 34px;
+          font-size: 15px;
+          margin-top: 10px;
+
+          .price{
+            float: left;
+            color: #fc600c;
+          }
+          .nice{
+            float: right;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+/*=======================pc端==================*/
+@media screen and (max-width:1200px){
+
+}
+/*=======================大pad==================*/
+@media screen and (min-width:992px) and (max-width:1199px){
+  #tour .center h2{
+     font-size: 40px;
+  }
+
+}
+/*=======================pad==================*/
+@media screen and (min-width:768px) and (max-width:991px){
+   #banner{
+     .searchBox{
+       height: 52px;
+       input{
+         font-size: 12px;
+         height: 48px;
+         margin-top: 2px;
+       }
+       button{
+         font-size: 12px;
+         height: 48px;
+         margin-top: 2px;
+       }
+     }
+   }
+  #tour .center h2{
+    font-size: 36px;
+  }
+
+}
+/*=======================手机==================*/
+@media screen and (min-width:480px) and (max-width:767px){
+    #banner{
+      padding-top: 45px;
+    }
+  #tour .center h2{
+    font-size: 32px;
+  }
+  #tour .center>p{
+    font-size: 14px;
+  }
+  #tour .showBox{
+    width: 100%;
+    dl{
+      width: 48.5%;
+    }
+  }
+}
+
+
+@media screen and (max-width:479px){
+    #banner{
+      padding-top: 45px;
+    }
+  #tour .center h2{
+    font-size: 30px;
+  }
+  #tour .center>p{
+    font-size: 14px;
+  }
+  #tour .showBox{
+    width: 100%;
+    dl{
+      width: 98%;
+    }
+  }
+}

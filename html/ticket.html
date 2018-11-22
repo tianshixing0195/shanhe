@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>机票</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/ticket.css" />
+</head>
+<body>
+   <header></header>
+   <main>
+       <div id="banner">
+           <img src="../img/headline.jpg"/>
+           <div class="banner_info">
+               <h2>机票订购</h2>
+               <h3>机票、火车票、轮船票等各种票务订购的服务</h3>
+           </div>
+       </div>
+       <section>
+           <div id="left_box">
+               <div class="ticket_reserve">
+                   <h3>机票预订</h3>
+                   <ul>
+                       <li>航班类型</li>
+                       <li class="now"><a href="#">单程</a></li>
+                       <li><a href="#">往返</a></li>
+                   </ul>
+                   <div class="type">
+                       <div class="type_Left">
+                           <p> <span>出发城市</span><input type="text" placeholder="城市名"></p>
+                           <p> <span>返回城市 </span><input type="text" placeholder="城市名"></p>
+                       </div>
+                       <div class="type_right">
+                           <p> <span>出发时间</span><input type="text" placeholder="时间/日期"></p>
+                           <p> <span>返回时间</span><input type="text" placeholder="时间/日期"></p>
+                       </div>
+                       <div class="buytickets">
+                           <button>订票</button>
+                       </div>
+
+                   </div>
+
+
+               </div>
+               <div class="new_info">
+                   <h3>机票预订</h3>
+                   <ul>
+                       <li>热门城市:</li>
+                       <li class="now"><a href="#">北京</a></li>
+                       <li><a href="#">上海</a></li>
+                       <li><a href="#">广州</a></li>
+                       <li><a href="#">深圳</a></li>
+                       <li><a href="#">重庆</a></li>
+                       <li><a href="#">成都</a></li>
+                       <li><a href="#">杭州</a></li>
+                       <li><a href="#">南京</a></li>
+                   </ul>
+
+                       <table>
+                           <thead>
+                               <tr>
+                                   <th class="road">路线</th>
+                                   <th class="date">日期</th>
+                                   <th class="price">价格</th>
+                                   <th class="disc">税费</th>
+                                   <th class="food">餐食</th>
+                                   <th class="plane">航班</th>
+                                   <th class="res">预订</th>
+                               </tr>
+                           </thead>
+                          <tbody>
+                              <tr>
+                                  <td class="road" >北京-成都</td>
+                                  <td class="date">10-15</td>
+                                  <td class="price">￥745</td>
+                                  <td class="disc">￥50</td>
+                                  <td class="food">有</td>
+                                  <td class="plane">春秋航空</td>
+                                  <td class="res">预订</td>
+                              </tr>
+                              <tr>
+                                  <td class="road" >北京-成都</td>
+                                  <td class="date">10-15</td>
+                                  <td class="price">￥745</td>
+                                  <td class="disc">￥50</td>
+                                  <td class="food">有</td>
+                                  <td class="plane">春秋航空</td>
+                                  <td class="res">预订</td>
+                              </tr>
+                          </tbody>
+
+                       </table>
+               </div>
+               <button>加载更多航班...</button>
+           </div>
+           <div id="right_box"> </div>
+
+       </section>
+   </main>
+   <footer></footer>
+
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery.1.10.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+       $("header").load("header.html");
+        $("footer").load("footer.html");
+        $("#right_box").load("right.html");
+    });
+</script>
